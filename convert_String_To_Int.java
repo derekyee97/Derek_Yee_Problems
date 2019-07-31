@@ -33,7 +33,7 @@ public class convert_String_To_Int
 			isNegative=true;
 			iterator=1;  //skip first char if negative
 		}
-		while(iterator<input.length())
+		while(iterator<input.length()) //iterating through string
 		{
 			if(!Character.isDigit(input.charAt(iterator)))
 			{
@@ -48,7 +48,7 @@ public class convert_String_To_Int
 					{
 						factor=1000;
 					}
-					try
+					try //checks for overflow/underflow
 					{
 						convertedNum=Math.multiplyExact(convertedNum,factor); 
 						convertedNum=Math.addExact(convertedNum, asciiValue);
@@ -90,7 +90,7 @@ public class convert_String_To_Int
 		}
 		return convertedNum;
 	}
-	public static boolean convertToAscii(char answer)
+	public static boolean convertToAscii(char answer)  //gets result for if user wants to convert to ASCII
 	{
 		if(answer=='y' || answer=='Y')
 		{
