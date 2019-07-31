@@ -91,7 +91,6 @@ public class convert_String_To_Int
 		}
 		return convertedNum;
 	}
-	
 	public static boolean convertToAscii(char answer)
 	{
 		if(answer=='y' || answer=='Y')
